@@ -1,0 +1,36 @@
+/*
+Theme Name: My Theme
+Author: Akshay Jumbade
+Version: 1.0.0-beta
+*/
+[v-cloak] {
+   display: none;
+}
+/* REMEMBER: This style will only contain common usefull classes */
+/* Font Face */
+@font-face {
+   font-family: 'expo-brand-bold';
+   src: url('./src/fonts/expo/MaisonNeue-Bold.woff') format('woff');
+}
+
+@font-face {
+   font-family: expo-brand-book;
+   src: url('./src/fonts/expo/MaisonNeue-Book.woff') format('woff');
+}
+
+@font-face {
+   font-family: expo-brand-demi;
+   src: url('./src/fonts/expo/MaisonNeue-Demi.woff') format('woff');
+}
+
+body, html, input, button {
+   font-family: 'expo-brand-book', sans-serif;
+}
+/* Font Face */
+.menu,
+.submenu,
+.sub-menu {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
