@@ -2,7 +2,7 @@
          <div class="container py-5">
             <div class="row">
                <div class="col-sm-3">
-                  <div class="biz-card">
+                  <div class="biz-card mb-3">
                      <h3 class="m-0 h5"><?php echo bloginfo('name') ?></h3>
                      <p class="text-muted"><?php echo bloginfo('description') ?></p>
                      <div class="media  ">

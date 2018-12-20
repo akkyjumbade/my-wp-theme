@@ -3,7 +3,7 @@
 <head>
    <meta charset="<?php bloginfo('charset') ?>" />
    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, uc-fitscreen=yes" />
    <meta name="description" content="<?php bloginfo('description') ?>" />
    <meta name="author" content="<?php bloginfo('author') ?>" />
 
@@ -30,8 +30,6 @@
    <!-- Disable night mode for this page  -->
    <meta name="nightmode" content="enable/disable" />
    <!-- Fitscreen  -->
-   <meta name="viewport" content="uc-fitscreen=yes"/>
-   <!-- Layout mode -->
    <meta name="layoutmode" content="fitscreen/standard" />
    <!-- imagemode - show image even in text only mode  -->
    <meta name="imagemode" content="force" />
