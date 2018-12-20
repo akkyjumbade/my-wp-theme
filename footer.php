@@ -7,7 +7,7 @@
                      <p class="text-muted"><?php echo bloginfo('description') ?></p>
                      <div class="media  ">
                         <div class="media-left mr-2">
-                           <h3 class="font-weight-bold m-0 h1">&#9743;</h3>
+                           <h3 class="font-weight-bold m-0 h1">&#9990;</h3>
                         </div>
                         <div class="media-body">
                            <p class="mb-1">Got questions? Call us now</p>
