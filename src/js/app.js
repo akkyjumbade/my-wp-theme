@@ -1,6 +1,7 @@
 import EventBus from './EventBus.js'
 
 const app = new Vue({
+   _scopeId: 'h-app',
    el: '#rootEl',
    data() {
       return {
@@ -13,3 +14,4 @@ const app = new Vue({
       })
    }
 })
+export default app;

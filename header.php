@@ -2,20 +2,52 @@
 <html <?php language_attributes() ?>>
 <head>
    <meta charset="<?php bloginfo('charset') ?>" />
-   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-   <meta name="description" content="" />
-   <meta name="author" content="" />
-   <meta name="generator" content="" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+   <meta name="description" content="<?php bloginfo('description') ?>" />
+   <meta name="author" content="<?php bloginfo('author') ?>" />
+
+   <!-- Android  -->
+   <meta name="theme-color" content="<?php echo get_theme_mod('lwp_link_color') ?>" />
+   <meta name="mobile-web-app-capable" content="yes" />
+   <!-- iOS -->
+   <meta name="apple-mobile-web-app-title" content="<?php bloginfo('title') ?>" />
+   <meta name="apple-mobile-web-app-capable" content="yes" />
+   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+   <!-- Windows  -->
+   <meta name="msapplication-navbutton-color" content="<?php echo get_theme_mod('lwp_link_color') ?>" />
+   <meta name="msapplication-TileColor" content="<?php echo get_theme_mod('lwp_link_color') ?>" />
+   <!-- <meta name="msapplication-config" content="browserconfig.xml" /> -->
+   <!-- Pinned Sites  -->
+   <meta name="application-name" content="<?php bloginfo('title') ?>" />
+   <meta name="msapplication-tooltip" content="<?php bloginfo('title') ?>" />
+   <meta name="msapplication-starturl" content="./" />
+   <!-- Tap highlighting  -->
+   <meta name="msapplication-tap-highlight" content="no" />
+   <!-- UC Mobile Browser  -->
+   <meta name="full-screen" content="yes" />
+   <meta name="browsermode" content="application" />
+   <!-- Disable night mode for this page  -->
+   <meta name="nightmode" content="enable/disable" />
+   <!-- Fitscreen  -->
+   <meta name="viewport" content="uc-fitscreen=yes"/>
+   <!-- Layout mode -->
+   <meta name="layoutmode" content="fitscreen/standard" />
+   <!-- imagemode - show image even in text only mode  -->
+   <meta name="imagemode" content="force" />
+   <!-- Orientation  -->
+   <meta name="screen-orientation" content="portrait" />
+
    <title><?php bloginfo('title') ?></title>
-   <!-- Favicons -->
-   <!-- <link rel="apple-touch-icon" href="" sizes="180x180" />
-   <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png" />
-   <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png" />
+   <!-- Link [starts here] -->
+   <!--
+   <link rel="apple-touch-icon" href="" sizes="180x180" />
    <link rel="manifest" href="/manifest.json" />
    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#563d7c" />
    <link rel="icon" href="/favicon.ico" />
-   <meta name="msapplication-config" content="/browserconfig.xml" /> -->
-   <meta name="theme-color" content="#563d7c" />
+   -->
+   <!-- Link [ends here] -->
+
    <?php wp_head() ?>
 </head>
 <body <?php body_class() ?>>
@@ -25,5 +57,8 @@
       </div>
    </a>
    <!-- [root element] starts here -->
-   <div id="rootEl" v-cloak>
+   <div id="rootEl" v-cloak class="position-relative">
+   <?php if ( function_exists( 'the_custom_logo' ) ) { ?>
+      <?php the_custom_logo(); ?>
+   <?php } ?>
    <?php include_once 'template-parts/navbar.php' ?>

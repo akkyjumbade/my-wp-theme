@@ -8,23 +8,27 @@ Version: 1.0.0-beta
 }
 /* REMEMBER: This style will only contain common usefull classes */
 /* Font Face */
-@font-face {
-   font-family: 'expo-brand-bold';
-   src: url('./src/fonts/expo/MaisonNeue-Bold.woff') format('woff');
-}
-
-@font-face {
-   font-family: expo-brand-book;
-   src: url('./src/fonts/expo/MaisonNeue-Book.woff') format('woff');
-}
-
-@font-face {
-   font-family: expo-brand-demi;
-   src: url('./src/fonts/expo/MaisonNeue-Demi.woff') format('woff');
-}
 
 body, html, input, button {
-   font-family: 'expo-brand-book', sans-serif;
+   font-family: var(--primary_font, 'Segoe ui'), sans-serif;
+}
+body {
+   margin: 0;
+   padding: 0;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   cursor: default;
+   min-height: 100%;
+   min-height: 100vh;
+}
+.custom-logo-link {
+   display: inline-block;
+}
+.custom-logo {
+   max-width: 256px;
+   height: auto;
+   max-height: 256px;
 }
 /* Font Face */
 .menu,
@@ -33,4 +37,15 @@ body, html, input, button {
    list-style: none;
    padding: 0;
    margin: 0;
+}
+
+/* Footer */
+#rootEl {
+   min-height: 100vh;
+   box-sizing: border-box;
+}
+.footer {
+   --font_size: 14px;
+   font-size: var(--font_size);
+   bottom: 0;
 }

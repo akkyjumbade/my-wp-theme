@@ -1,8 +1,8 @@
 <?php
 /**
- * Template Name: About
+ * Template Name: Full Width Layout
  */
 ?>
 <?php get_header() ?>
-wowo about
+
 <?php get_footer() ?>
