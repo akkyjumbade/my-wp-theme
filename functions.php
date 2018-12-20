@@ -1,8 +1,8 @@
 <?php
-require __DIR__.'/functions-business.php';
-require __DIR__.'/functions-resources.php';
-require __DIR__.'/functions-colorschema.php';
-require __DIR__.'/functions-widgets.php';
+require __DIR__.'/functions/functions-business.php';
+require __DIR__.'/functions/functions-resources.php';
+require __DIR__.'/functions/functions-colorschema.php';
+require __DIR__.'/functions/functions-widgets.php';
 
 // theme support
 function themeSetup()
