@@ -1,7 +1,5 @@
 <?php
-/**
- * Template Name: Contact
- */
+/** Template Name: Contact */
 ?>
 <?php get_header() ?>
 <section class="page-section">

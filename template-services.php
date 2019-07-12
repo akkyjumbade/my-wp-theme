@@ -1,7 +1,5 @@
 <?php
-/**
- * Template Name: Services
- */
+/** Template Name: Services */
 ?>
 <?php get_header() ?>
 <?php the_post_thumbnail('banner-image') ?>

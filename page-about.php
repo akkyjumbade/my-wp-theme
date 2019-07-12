@@ -1,7 +1,5 @@
 <?php
-/**
- * Template Name: About
- */
+/** Template Name: About */
 ?>
 <?php get_header() ?>
 wowo about

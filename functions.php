@@ -8,8 +8,7 @@ require __DIR__.'/functions/functions-widgets.php';
 function themeSetup()
 {
    add_theme_support('post-thumbnails');
-   add_image_size('small-thumbnail', 180, 120, true);
-   add_image_size('banner-image', 920, 210, true);
+   // add_image_size('small-thumbnail', 180, 120, true);
    // post formats
    add_theme_support( 'post-formats', [
       'aside', 'gallery', 'link', 'image', 'quote', 'video', 'audio', 'chat',
@@ -18,15 +17,18 @@ function themeSetup()
 		'flex-width' => true,
 		'flex-height' => true,
    ) );
-
    add_theme_support( 'gutenberg', array(
       'colors' => array(
          '#617958',
       ),
    ) );
    add_theme_support( 'align-wide' );
+   add_theme_support( 'editor' );
+   add_theme_support( 'responsive-embeds' );
+   add_theme_support( 'align-wide' );
+   add_theme_support( 'editor-styles' );
    add_theme_support( 'customize-selective-refresh-widgets' );
-   add_editor_style( array( 'src/css/editor-style.css') );
+   add_editor_style( array( 'asssets/styles/editor-style.css') );
 }
 add_action('after_setup_theme', 'themeSetup');
 

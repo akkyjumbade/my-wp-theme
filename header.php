@@ -55,8 +55,5 @@
       </div>
    </a>
    <!-- [root element] starts here -->
-   <div id="rootEl" v-cloak class="position-relative">
-   <?php if ( function_exists( 'the_custom_logo' ) ) { ?>
-      <?php the_custom_logo(); ?>
-   <?php } ?>
+   <div id="root" class="position-relative">
    <?php include_once 'template-parts/navbar.php' ?>
